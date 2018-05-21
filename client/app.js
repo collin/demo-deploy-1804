@@ -7,8 +7,7 @@ import Routes from './routes'
 const App = () => {
   return (
     <div>
-      <Navbar />
-      <Routes />
+      <h1>Yay!</h1>
     </div>
   )
 }
