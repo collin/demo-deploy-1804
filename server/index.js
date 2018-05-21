@@ -51,10 +51,6 @@ const createApp = () => {
   app.use(passport.initialize())
   app.use(passport.session())
 
-  app.get('/bad-idea', (req, res) => {
-    res.send(`<h1>${process.env.DATABASE_URL}</h1>`)
-  })
-
   // auth and api routes
   app.use('/auth', require('./auth'))
   app.use('/api', require('./api'))
